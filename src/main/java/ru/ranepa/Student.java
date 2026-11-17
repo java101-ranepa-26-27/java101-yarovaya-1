@@ -10,7 +10,24 @@ public class Student {
         this.name = name;
         this.marks = marks;
     }
-public double averageMarks() {
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Integer> getMarks() {
+        return marks;
+    }
+
+    public void setMarks(List<Integer> marks) {
+        this.marks = marks;
+    }
+
+    public double averageMarks() {
         int sum=0;
         for (Integer mark: marks){
             sum+=mark;
